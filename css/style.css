@@ -1,0 +1,513 @@
+/* body{
+    background-color: rgb(138, 142, 143);
+} */
+.nav-bar {
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  /* cursor: pointer; */
+  align-items: center;
+  color: green;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+
+
+}
+
+.logo {
+  height: 100px;
+  width: 90px;
+  padding: 30px;
+  margin-top: 10px;
+
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.second-div {
+  display: flex;
+
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+
+
+}
+
+.list li {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+
+
+}
+
+.list li a:hover {
+  color: green;
+}
+
+.button {
+  background-color: green;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin: 20px 30px;
+  width: 200px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 3px solid orange;
+
+}
+.button a {
+  text-decoration: none;
+  color:orange;
+}
+
+.button:hover {
+  background-color: orange;
+  cursor: pointer;
+  border: 3px solid green;
+
+}
+
+.service-div {
+  align-items: center;
+  text-align: center;
+  padding: 0px 50px;
+  margin-top: 680px;
+
+}
+
+.serv-head {
+  font-size: 50px;
+  font-weight: bold;
+  color: orange;
+
+
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+
+
+}
+
+.service-first {
+  border: 5px solid green;
+  height: 500px;
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: wrap;
+
+}
+
+.service-first:hover {
+  padding: 50px;
+  border: 5px solid orange;
+  background-color: rgb(175, 146, 94);
+  color: green;
+
+}
+
+.sale-heading {
+  color: orange;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.lines {
+  color: green;
+  font-size: 20px;
+}
+
+.about-head {
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+}
+
+.images {
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  margin: 20px;
+
+}
+
+.images-div {
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.serv-lines {
+  color: green;
+  font-size: 20px;
+}
+
+.service-header {
+
+  color: green;
+  font-size: 80px;
+  margin-top: 100px;
+
+
+}
+
+.service-headrerclass {
+
+  position: relative;
+
+}
+
+.view-button {
+  padding: 10px;
+  border-radius: 10px;
+  color: orange;
+  margin: 10px 20px;
+  width: 200px;
+  background-color: green;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid green;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: rgb(194, 134, 23);
+  color: green;
+}
+
+.home-header {
+  font-size: 60px;
+  color: orange;
+  font-weight: 700;
+  line-height: 1.3;
+  z-index: 5;
+  position: relative;
+}
+
+.home-headrerclass {
+  width: 50%;
+  padding: 15px 20px;
+  align-items: center;
+  margin-top: 130px;
+  color: orange;
+  margin-left: 100px;
+}
+
+.buy-button {
+  margin-top: 20px;
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: orange;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+
+}
+
+.buy-div {
+  margin-left: 100px;
+
+}
+
+.brand-div {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  align-items: center;
+  background-color: green;
+}
+
+.why-div {
+  color: orange;
+
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 25px;
+
+}
+
+.hero-sec {
+  display: flex;
+}
+
+.surety {
+  border-left: 5px solid orange;
+  padding: 20px;
+  /* height:80px; */
+}
+
+.third-hero {}
+
+.certified {
+  display: flex;
+}
+
+.certi-button {
+  border-radius: 10px;
+  background-color: orange;
+  color: azure;
+  padding: 10px;
+  margin: 10px 20px;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 20;
+  border-color: orange;
+  cursor: pointer;
+}
+
+.hero-left {
+  height: 100vh;
+  width: 650px;
+}
+
+.dream-button {
+  border-radius: 10px;
+  background-color: green;
+  color: aliceblue;
+  width: 200px;
+  font-size: 18px;
+  margin: 10px 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.viewall-button {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.three-images {
+  display: flex;
+  height: 400px;
+  width: 350px;
+  gap: 10px;
+}
+
+.par-div {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.forth-div {
+  border: 4px solid green;
+  width: 340px;
+  padding: 10px;
+  color: green;
+}
+
+.forth-div p {
+  font-size: 18px;
+}
+
+.form-sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px;
+}
+
+.input-class {
+  background-color: green;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 250px;
+  border: 4px solid green;
+  cursor: pointer;
+}
+
+.input-button {
+  background-color: green;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 250px;
+  border: 4px solid green;
+  cursor: pointer;
+
+}
+
+.form-img {
+  height: 100vh;
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.kimages {
+  height: 300px;
+  width: 360px;
+  border: 5px solid green;
+  padding: 10px;
+  margin: 10px 30px;
+
+
+}
+
+.boyimg {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px
+}
+
+.kush {
+  padding: 20px;
+}
+
+.chat {
+  display: flex;
+  gap: 30px;
+}
+
+.chat-button {
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  width: 300px;
+  padding: 20px;
+
+}
+
+.chat-button a {
+  color: azure;
+  font-size: 20px;
+}
+
+.right {
+  background-color: green;
+  width: 100%;
+  height: 60vh;
+
+
+}
+
+.enter-mail {
+  padding: 15px;
+  margin-left: 50px;
+  font-size: 18px;
+  background-color: white;
+  border-bottom: 5px solid white;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+}
+
+.sign {
+  padding: 15px;
+  margin-left: 50px;
+  font-size: 18px;
+  background-color: orange;
+  color: green;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.foot-img {
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+}
+
+.foot-div {
+  width: 25%;
+
+}
+
+ul li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.k-image {
+  height: 50vh;
+  width: 90%;
+
+}
+
+.details-divi {
+  border: 3px solid green;
+  display: flex;
+}
+
+.inu-button {
+  border-radius: 10px;
+  background-color: green;
+  padding: 10px;
+  width: 400px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 50px;
+
+}
+
+.two-wheeler {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.input-wheeler {
+  border: 2px solid green;
+  height: 600px;
+  width: 600px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.contact-link {
+  border-radius: 10px;
+  color: green;
+  width: 300px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background-color: beige;
+  font-size: 18px;
+}
