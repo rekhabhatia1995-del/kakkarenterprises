@@ -475,9 +475,10 @@ section {
 .hero-left {
   width: 100%;
   height: auto;
-  max-height: 600px;
+  max-height: 650px;
   object-fit: cover;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .certified-content {
@@ -494,9 +495,14 @@ section {
 }
 
 .feature-item img {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.feature-item:hover img {
+  transform: scale(1.1);
 }
 
 .feature-item h1 {
@@ -608,10 +614,15 @@ section {
 
 .three-images {
   width: 100%;
-  height: 250px;
+  height: 280px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
+  transition: transform var(--transition-normal);
+}
+
+.three-images:hover {
+  transform: scale(1.05);
 }
 
 .forth-div h1 {
@@ -689,11 +700,17 @@ section {
 
 .form-img {
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   height: auto;
   margin: var(--spacing-xl) auto 0;
   display: block;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal);
+}
+
+.form-img:hover {
+  transform: scale(1.02);
 }
 
 /* ==========================================
@@ -779,10 +796,15 @@ section {
 
 .kimages img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
+  transition: transform var(--transition-normal);
+}
+
+.kimages img:hover {
+  transform: scale(1.02);
 }
 
 .kimages h1 {
@@ -981,10 +1003,15 @@ footer {
 }
 
 .contact-item img {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   margin-top: 3px;
   flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.contact-item:hover img {
+  transform: scale(1.1);
 }
 
 /* ==========================================
@@ -1050,7 +1077,8 @@ footer {
     height: auto;
     padding: var(--spacing-sm);
     flex-wrap: wrap;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   
   .logo {
@@ -1327,10 +1355,16 @@ footer {
 
 .about-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   height: auto;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal);
+}
+
+.about-image:hover {
+  transform: scale(1.02);
 }
 
 .about-text h1 {
@@ -1514,9 +1548,14 @@ footer {
 
 .parts-card img {
   width: 100%;
-  height: 400px;
+  height: 420px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-normal);
+}
+
+.parts-card img:hover {
+  transform: scale(1.03);
 }
 
 /* Finance Page */
