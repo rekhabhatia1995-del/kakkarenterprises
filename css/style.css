@@ -120,13 +120,13 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding:10px;
   display: wrap;
 
 }
 
 .service-first:hover {
-  padding: 50px;
+  padding:20px;
   border: 5px solid orange;
   background-color: rgb(175, 146, 94);
   color: green;
@@ -463,7 +463,7 @@ ul li:hover {
 }
 
 .k-image {
-  height: 50vh;
+  height: 56vh;
   width: 90%;
 
 }
