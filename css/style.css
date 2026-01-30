@@ -269,9 +269,9 @@ section {
 }
 
 .logo {
-  height: 100px;
-  width: 90px;
-  padding: var(--spacing-md);
+  height: 120px;
+  width: 120px;
+  /* padding: var(--spacing-md); */
 }
 
 .second-div {
@@ -368,7 +368,7 @@ section {
   position: relative;
   height: 80vh;
   min-height: 500px;
-  background-image: url("../images/aboutimg.jpg");
+  background-image: url("../images/banner-5.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -483,7 +483,7 @@ section {
 
 .certified-content {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .feature-item {
@@ -491,7 +491,7 @@ section {
   display: flex;
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .feature-item img {
