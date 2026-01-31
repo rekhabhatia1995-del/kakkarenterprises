@@ -1,17 +1,9 @@
-# TODO: Standardize Navbar Across All Pages
+# TODO: Add All Background Properties to Background-Image Declarations
 
-## Tasks
-- [x] Update button-div in about.html to match index.html
-- [x] Update button-div in contactus.html to match index.html
-- [x] Update button-div in finance.html to match index.html
-- [x] Update button-div in part.html to match index.html
-- [x] Update button-div in service.html to match index.html
-- [x] Update button-div in sale.html to match index.html
-- [x] Verify all pages have consistent navbar
-
-## Footer Standardization Tasks
-- [x] Add Facebook link to footer in about.html
-- [x] Add Facebook link to footer in contactus.html
-- [x] Add Facebook link to footer in part.html
-- [x] Add Facebook link to footer in sale.html
-- [x] Verify all pages have consistent footer
+- [x] Add missing background properties to .hero-home
+- [x] Add missing background properties to .about-hero::before
+- [x] Add missing background properties to .about-hero::after
+- [x] Add missing background properties to .hero-service
+- [x] Add missing background properties to .parts-hero
+- [ ] Add missing background properties to .finance-hero
+- [x] Add missing background properties to .sale-hero

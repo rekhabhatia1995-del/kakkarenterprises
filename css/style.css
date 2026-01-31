@@ -376,6 +376,10 @@ section {
   background-image: url("../images/banner-5.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,8 +601,16 @@ section {
 }
 
 /* Force 4 cards per row in desktop view for services sections */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media (min-width: 1200px) {
   .par-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .service-box {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -606,11 +618,11 @@ section {
 .forth-div {
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-md);
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   color: var(--color-primary);
   transition: all var(--transition-normal);
   background-color: var(--color-white);
-  min-height: 100px;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -623,9 +635,9 @@ section {
 
 .three-images {
   width: 100%;
-  height: 150px;
-  padding: var(--spacing-md);
-  object-fit: cover;
+  height: 120px;
+  padding: var(--spacing-sm);
+  object-fit: contain;
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
   transition: transform var(--transition-normal);
@@ -636,8 +648,8 @@ section {
 }
 
 .forth-div h1 {
-  font-size: var(--font-size-xl);
-  margin: var(--spacing-sm) 0;
+  font-size: var(--font-size-lg);
+  margin: var(--spacing-xs) 0;
 }
 
 .forth-div p {
@@ -727,7 +739,8 @@ section {
    TESTIMONIALS SECTION
    ========================================== */
 .testimonials-section {
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-2xl) var(--spacing-lg) var(--spacing-md);
+  background-color: var(--color-background);
 }
 
 .testimonials-section h1 {
@@ -736,27 +749,32 @@ section {
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin-bottom: var(--spacing-xl);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: var(--spacing-xl);
   max-width: var(--container-max-width);
   margin: 0 auto;
 }
 
 .testimonial-card {
   display: flex;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #003d00 100%);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--color-secondary);
 }
 
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 128, 0, 0.3);
+  border-color: var(--color-secondary);
 }
 
 .kush {
@@ -1036,12 +1054,20 @@ footer {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-secondary);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.serv-lines {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-dark);
+  margin: 0 0 var(--spacing-xl) 0;
+  padding: 0 var(--spacing-md);
+  line-height: var(--line-height-relaxed);
 }
 
 .service-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-lg);
   max-width: var(--container-max-width);
   margin: 0 auto;
@@ -1063,8 +1089,8 @@ footer {
 }
 
 .images {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin: 0 auto var(--spacing-md);
   object-fit: cover;
   border-radius: var(--radius-md);
@@ -1076,6 +1102,9 @@ footer {
 
 /* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
+  .service-box {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   :root {
     --font-size-5xl: 40px;
     --font-size-4xl: 32px;
@@ -1603,6 +1632,10 @@ footer {
   background-image: url("https://images.jdmagicbox.com/quickquotes/images_main/vande-bharat-grey-lithium-battery-electric-rickshaw-2220292655-fadnqz9d.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   filter: blur(14px);
   transform: scale(1.2);
   z-index: 1;
@@ -1740,6 +1773,9 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1782,7 +1818,7 @@ footer {
 
 .service-details-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
   border-radius: var(--radius-md);
 }
@@ -1790,11 +1826,15 @@ footer {
 /* Parts Page */
 .parts-hero {
   position: relative;
-  height: 80vh;
-  min-height: 500px;
+  height: 60vh;
+  min-height: 400px;
   background-image: url("../images/spare.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1826,8 +1866,8 @@ footer {
 
 .parts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
@@ -1836,7 +1876,7 @@ footer {
 .parts-card {
   border: 5px solid var(--color-primary);
   border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   transition: all var(--transition-normal);
   background-color: var(--color-white);
   margin: 0;
@@ -1850,8 +1890,8 @@ footer {
 
 .parts-card img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
   border-radius: var(--radius-md);
   transition: transform var(--transition-normal);
   margin-bottom: var(--spacing-md);
@@ -1869,6 +1909,10 @@ footer {
   background-image: url("../images/range.webp");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1906,7 +1950,7 @@ footer {
 .finance-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-xl);
+  gap: var(--spacing-md);
   max-width: var(--container-max-width);
   margin: 0 auto;
 }
@@ -2117,6 +2161,10 @@ footer {
   background-image: url("../images/black.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
