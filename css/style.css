@@ -13,13 +13,13 @@
   --color-overlay: rgba(0, 0, 0, 0.45);
 
   /* Spacing (Consistent Scale) */
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-md: 24px;
-  --spacing-lg: 32px;
-  --spacing-xl: 48px;
-  --spacing-2xl: 64px;
-  --spacing-3xl: 96px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 48px;
 
   /* Typography */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -175,8 +175,8 @@ section {
    BUTTON STYLES
    ========================================== */
 .btn {
-  padding: var(--spacing-sm) var(--spacing-lg);
-  font-size: var(--font-size-md);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   border-radius: var(--radius-lg);
   cursor: pointer;
@@ -286,15 +286,27 @@ section {
   font-size: var(--font-size-lg);
 }
 
+.nav-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
 .nav-list li a {
   text-decoration: none;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: var(--font-weight-bold);
   transition: color var(--transition-fast);
 }
 
+.nav-icon {
+  font-size: 18px;
+  margin-right: 5px;
+  color: var(--color-secondary);
+}
+
 .nav-list li a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .button-div .button {
@@ -1819,14 +1831,16 @@ footer {
   gap: var(--spacing-xl);
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 .parts-card {
   border: 5px solid var(--color-primary);
   border-radius: var(--radius-md);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg);
   transition: all var(--transition-normal);
   background-color: var(--color-white);
+  margin: 0;
 }
 
 .parts-card:hover {
@@ -1837,10 +1851,11 @@ footer {
 
 .parts-card img {
   width: 100%;
-  height: 420px;
+  height: 350px;
   object-fit: cover;
   border-radius: var(--radius-md);
   transition: transform var(--transition-normal);
+  margin-bottom: var(--spacing-md);
 }
 
 .parts-card img:hover {
